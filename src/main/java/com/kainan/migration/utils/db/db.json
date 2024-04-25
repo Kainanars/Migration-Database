@@ -1,0 +1,16 @@
+[
+  {
+    "sqlDatabaseUrl": "jdbc:postgresql://localhost:5432/data?user=kainan&password=knx",
+    "mongoUrl": "mongodb://kainanars:knx@ac-5hvegmv-shard-00-00.3xq7czg.mongodb.net:27017,ac-5hvegmv-shard-00-01.3xq7czg.mongodb.net:27017,ac-5hvegmv-shard-00-02.3xq7czg.mongodb.net:27017/?replicaSet=atlas-pc3bhs-shard-0&ssl=true&authSource=admin",
+    "sqlDatabaseTable": "public.user",
+    "mongoCollection": "user",
+    "mongoDatabase": "ds3"
+  },
+  {
+  "sqlDatabaseUrl": "jdbc:mysql://root:knx@localhost:3310/data",
+  "mongoUrl": "mongodb://kainanars:knx@ac-5hvegmv-shard-00-00.3xq7czg.mongodb.net:27017,ac-5hvegmv-shard-00-01.3xq7czg.mongodb.net:27017,ac-5hvegmv-shard-00-02.3xq7czg.mongodb.net:27017/?replicaSet=atlas-pc3bhs-shard-0&ssl=true&authSource=admin",
+  "sqlDatabaseTable": "usuarios",
+  "mongoCollection": "usuarios",
+  "mongoDatabase": "ds3"
+  }
+]

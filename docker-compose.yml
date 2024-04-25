@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: kainan
+      POSTGRES_PASSWORD: knx
+      POSTGRES_DB: data
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  mysql:
+    image: mysql
+    ports:
+      - "3310:3306"
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: knx
+      MYSQL_DATABASE: data
+
+volumes:
+  postgres_data:
+    driver: local
+
+
